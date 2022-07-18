@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="pt-BR">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALFANDEGA</title>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+    Nacionalidade: <input type="pais" name="txtpais" id="txtpais">
+    <input type="button" value="verificar" onclick="Verificar()">
+    <div name="país">
+
+    </div>    
+    <script>
+
+        function verificar() {
+            var país = window.document.getElementsByTagName('input.txtpaís')
+            var res = window.document.getElementsByTagName('div.país')
+            var país =verificar(txtv.name)
+            res.innerHTML = `<p>Sua nacionalidade atual é <stong>${Brasileiro}</strong></p>    
+            if (país > EUA) {
+                res.innerHTML += `<p>Você é<strong>Brasileiro</strong>!</p>`
+            } else () {
+                res.innerHTML += `<p>Voçê é <strong>Estrangeiro!</strong></p>`
+
+            } 
+                  
+
+
+        }
+    </script>
+    
+</body>
+</html>

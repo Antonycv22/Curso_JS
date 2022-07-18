@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfândega</title>
+</head>
+<body>
+    <h1>Sistema de Verificação de Nacionalidade</h1>
+    Nacionalidade: <input type="number" name="txtpaís" id="txtpaís">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var txtn = window.document.getElementsByTagName('input.txtpaís')
+            var res = window.document.getElementsByTagName('div.país')
+            var pais = verificar(txtn.name)
+            res.innerHTML = `<p>Sua nacionalidade atual é <strong>${Brasileiro}</strong></p>`
+            if (país == Brasil) {
+                    res.innerHTML += `<p>Voçê é <strong>${Brasileiro}</strong></p>`
+            } else {
+                    res.innerHTML += `<p>Você é <strong>${Estrangeiro}</strong></p>` 
+
+               }
+                
+            
+            
+                
+                   
+
+        }
+    </script>
+</body>
+</html>
